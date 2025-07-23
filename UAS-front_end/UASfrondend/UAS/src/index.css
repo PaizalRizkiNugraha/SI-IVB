@@ -1,0 +1,101 @@
+/* Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Tombol */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button.green {
+    background-color: #4CAF50; /* Hijau */
+}
+
+.button.gray {
+    background-color: #ccc; /* Abu-abu */
+}
+
+.cart-button {
+    background-color: #FF5722; /* Oranye */
+}
+
+/* Tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+/* Menu Bakso */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Mengatur lebar item menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    margin: 0;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .menu-item {
+        width: calc(50% - 40px); /* Untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%; /* Untuk layar sangat kecil */
+    }
+}
